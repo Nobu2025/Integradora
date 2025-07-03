@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="mx.edu.utez.vista.RestaController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <TextField fx:id="txtNum1" promptText="Número 1"/>
+    <TextField fx:id="txtNum2" promptText="Número 2"/>
+    <Button text="Restar" onAction="#restar"/>
+    <Label fx:id="lblResultado"/>
+</VBox>

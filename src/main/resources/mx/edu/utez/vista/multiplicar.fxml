@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" spacing="20.0"
+      xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="mx.edu.utez.vista.MultiplicarController"
+      style="-fx-background-color: linear-gradient(to bottom right, #6a11cb, #2575fc); -fx-padding: 20;">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="Multiplicar"
+           style="-fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 30px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 3, 0, 0, 2);" />
+
+    <TextField fx:id="txt1"
+               promptText="Número 1"
+               style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #2575fc; -fx-border-width: 2; -fx-padding: 8 12 8 12; -fx-font-size: 16px; -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%); -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5,0,0,1);" />
+
+    <TextField fx:id="txt2"
+               promptText="Número 2"
+               style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #2575fc; -fx-border-width: 2; -fx-padding: 8 12 8 12; -fx-font-size: 16px; -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%); -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5,0,0,1);" />
+
+    <Button onAction="#operacion_calcular"
+            text="Calcular"
+            style="-fx-background-color: linear-gradient(to right, #ff6f91, #ff9472); -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 18px; -fx-background-radius: 20; -fx-cursor: hand; -fx-padding: 10 30 10 30; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6,0,0,2);" />
+
+    <TextField fx:id="txtResultado"
+               promptText="Resultado"
+               editable="false"
+               style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #666; -fx-border-width: 2; -fx-padding: 8 12 8 12; -fx-font-size: 16px; -fx-text-fill: #333; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 5,0,0,1);" />
+
+</VBox>
