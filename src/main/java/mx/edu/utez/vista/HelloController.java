@@ -15,31 +15,43 @@ public class HelloController {
     @FXML
     private Label welcomeText;
 
-    @FXML public void onSumClick() {
-
-    }
-
-    @FXML public void onSubClick() {
-
-    }
-
-    @FXML public void onMulClick() {
-
-    }
-
-    @FXML  public void onDivClick() {
+    @FXML
+    public void onSumClick() {
 
     }
 
     @FXML
-    protected  void SumaV(ActionEvent event) throws IOException{
+    public void onSubClick() {
+
+    }
+
+    @FXML
+    public void onMulClick() {
+
+    }
+
+    @FXML
+    public void onDivClick() {
+
+    }
+
+    @FXML
+    protected void SumaV(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("suma.fxml"));
         Parent root = loader.load();
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
 
 
     }
-}
 
+    @FXML
+    protected void DivisiionV(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Divicion.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+}
