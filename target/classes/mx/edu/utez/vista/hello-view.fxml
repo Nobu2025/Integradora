@@ -11,7 +11,7 @@
 
     <Label fx:id="welcomeText" text="Bienvenido a la Calculadora" />
 
-    <Button onAction="#onSumClick" text="Suma" />
+    <Button onAction="#SumaV" text="Suma" />
     <Button onAction="#onSubClick" text="Resta" />
     <Button onAction="#onMulClick" text="Multiplicación" />
     <Button onAction="#onDivClick" text="División" />
